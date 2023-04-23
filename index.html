@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta name="description" content=" Более 200 Моделей. Новинки 2022 г. Быстрый расчет кухни + 3D-проект за 0 RUB">
+    <meta name="keywords" content="кухни мебель на заказ">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Белорусские кухни Неман в Воронеже!</title>
+</head>
+
+<body class="page__body">
+
+    <header class="page__header header">
+        <div class="header-main">
+            <div class="header-main__container container">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo.png" alt="Логотип Неман" width="251" height="76">
+                </a>
+                <ul class="header__contacts">
+                    <li class="header__item">
+                        <a class="header__link header__link--adress">Воронеж, Ленинский проспект, д. 156В</a>
+                        <a class="header__link header__link--time">Пн-Вс с 10:00 до 20:00</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__link--phone" href="tel:+74732517301">+7 (473) 251 73 01</a>
+                        <a class="header__link header__link--phone" href="tel:+79034200082">+7 (903) 420 00 82</a>
+                    </li>
+                </ul>
+                <button class="btn-reset button header__button" type="button" onclick="show__modal(call)">ЗАКАЗАТЬ
+                    ЗВОНОК
+                </button>
+            </div>
+        </div>
+        <nav class="nav header-nav">
+            <div class="nav__container container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#advantages">ПРЕИМУЩЕСТВА</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#catalog">НАШИ КУХНИ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#order">РАССЧИТАТЬ СТОИМОСТЬ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacts">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page__main main">
+
+        <section class="main__info info">
+            <div class="info__container container">
+                <h1 class="info__heading">Белорусские кухни Неман в Воронеже</h1>
+                <p class="info__text">Так же, как секрет хорошей еды зависит из каких ингредиентов и кем она готовится,
+                    так и качество Вашей столешницы будет зависеть от материала из которого она изготовлена и
+                    профессионализма того, кто ее делал.</p>
+                <button type="button" class="btn-reset button info__button" onclick="show__modal(enroll)">
+                    <p class="button__text">ЗАПИСАТЬСЯ К ДИЗАЙНЕРУ</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="main__advantages advantages" id="advantages">
+            <div class="container advantages__container">
+                <h2 class="advantages__heading page__heading">НАШИ <span class="colored__text">ПРЕИМУЩЕСТВА</span></h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <a class="advantages__link advantages__link--quality">
+                            <h4 class="advantages__info">ЕВРОПЕЙСКОЕ КАЧЕСТВО</h4>
+                            <p class="advantages__text">Наше производство отвечает европейским стандартам качества и
+                                экологии.</p>
+                        </a>
+                    </li>
+                    <li class="advantages__item">
+                        <a class="advantages__link advantages__link--design">
+                            <h4 class="advantages__info">ПРЕВОСХОДНЫЙ ДИЗАЙН</h4>
+                            <p class="advantages__text">Многолетний опыт сотрудничества с итальянскими дизайнерами
+                                позволяет нам создавать изысканную мебель.</p>
+                        </a>
+                    </li>
+                    <li class="advantages__item">
+                        <a href="https://akvrn.ru/" class="advantages__link advantages__link--countertop">
+                            <h4 class="advantages__info">СТОЛЕШНИЦА ИЗ КАМНЯ</h4>
+                            <p class="advantages__text">Собственное производство столещниц из камня</p>
+                        </a>
+                    </li>
+                    <li class="advantages__item">
+                        <a class="advantages__link advantages__link--worker">
+                            <h4 class="advantages__info">ОПЫТНЫЕ СОТРУДНИКИ</h4>
+                            <p class="advantages__text">Берем на работу монтажников с опытом установки кухонь не менее 6
+                                лет, работаем под ключ.</p>
+                        </a>
+                    </li>
+                    <li class="advantages__item">
+                        <a class="advantages__link advantages__link--support">
+                            <h4 class="advantages__info">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h4>
+                            <p class="advantages__text">Опытный дизайнер проконсультирует по выбору и размещению
+                                техники.</p>
+                        </a>
+                    </li>
+                    <li class="advantages__item">
+                        <a class="advantages__link advantages__link--money">
+                            <h4 class="advantages__info">УДОБНАЯ ОПЛАТА</h4>
+                            <p class="advantages__text">Принимаем наличный и безналичный расчет, банковские карты.
+                                Рассрочка до 8 месяцев.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main__calc calc">
+            <div class="container calc__container">
+                <h2 class="calc__heading page__heading"><span class="colored__text">РАСЧЁТ</span> СТОИМОСТИ КУХНИ</h2>
+                <div class="calc__box">
+                    <form class="calc__form" action="" method="post">
+                        <div class="calc__step step step--1" id="step-1">
+                            <h3 class="step__heading">Выберите <span class="colored__text">тип</span> кухни</h3>
+                            <ul class="step__list">
+                                <li class="step__item">
+                                    <img class="step__img" src="img/kitchen__type--straight.jpg" alt="Прямая кухня"
+                                        width="350" height="200">
+                                    <input checked class="step__input visually-hidden" type="radio" name="kitchen__type"
+                                        id="straight" value="Тип кухни : Прямая">
+                                    <label class="step__label" for="straight">
+                                        <span class="step__checkbox">
+                                            ПРЯМАЯ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/kitchen__type--angular.jpg" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="kitchen__type"
+                                        id="angular" value="Тип кухни : Угловая">
+                                    <label class="step__label" for="angular">
+                                        <span class="step__checkbox">
+                                            УГЛОВАЯ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/kitchen__type--p-shaped.jpg" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="kitchen__type"
+                                        id="p-shaped" value="Тип кухни : П-образная">
+                                    <label class="step__label" for="p-shaped">
+                                        <span class="step__checkbox">
+                                            П-ОБРАЗНАЯ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/kitchen__type--island.jpg" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="kitchen__type"
+                                        id="island" value="Тип кухни : С островом">
+                                    <label class="step__label" for="island">
+                                        <span class="step__checkbox">
+                                            С ОСТРОВОМ
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc__step step step--2" id="step-2">
+                            <h3 class="step__heading">Выберите <span class="colored__text">материал</span> фасада</h3>
+                            <ul class="step__list">
+                                <li class="step__item">
+                                    <img class="step__img" src="img/facade__material--paint.png" alt="">
+                                    <input checked class="step__input visually-hidden" type="radio" name="facade__material"
+                                        id="paint">
+                                    <label class="step__label" for="paint">
+                                        <span class="step__checkbox">
+                                            КРАСКА МДФ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/facade__material--pvc.png" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="facade__material"
+                                        id="pvc">
+                                    <label class="step__label" for="pvc">
+                                        <span class="step__checkbox">
+                                            ПВХ МДФ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item step__item--middle">
+                                    <img class="step__img" src="img/facade__material--plastic.png" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="facade__material"
+                                        id="plastic">
+                                    <label class="step__label" for="plastic">
+                                        <span class="step__checkbox">
+                                            ПЛАСТИК АКРИЛ МДФ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/facade__material--chipboard.png" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="facade__material"
+                                        id="chipboard__facade">
+                                    <label class="step__label" for="chipboard__facade">
+                                        <span class="step__checkbox">
+                                            ДСП
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/facade__material--solid.png" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="facade__material"
+                                        id="solid">
+                                    <label class="step__label" for="solid">
+                                        <span class="step__checkbox">
+                                            МАССИВ
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc__step step step--3" id="step-3">
+                            <h3 class="step__heading">Выберите <span class="colored__text">материал</span> столешницы
+                            </h3>
+                            <ul class="step__list">
+                                <li class="step__item">
+                                    <img class="step__img" src="img/countertop__material--acrylic.png" alt="">
+                                    <input checked class="step__input visually-hidden" type="radio" name="countertop__material"
+                                        id="acrylic">
+                                    <label class="step__label" for="acrylic">
+                                        <span class="step__checkbox">
+                                            АКРИЛОВЫЙ КАМЕНЬ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/countertop__material--quartz.png" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="countertop__material"
+                                        id="quartz">
+                                    <label class="step__label" for="quartz">
+                                        <span class="step__checkbox">
+                                            КВАРЦЕВЫЙ АГЛОМЕРАТ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/countertop__material--chipboard.png" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="countertop__material"
+                                        id="plastic__countertop">
+                                    <label class="step__label" for="plastic__countertop">
+                                        <span class="step__checkbox">
+                                            ПЛАСТИК
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc__step step step--4" id="step-4">
+                            <h3 class="step__heading">Выберите <span class="colored__text">стиль</span> кухни</h3>
+                            <ul class="step__list">
+                                <li class="step__item">
+                                    <img class="step__img" src="img/kitchen__style--classic.png" alt="">
+                                    <input checked class="step__input visually-hidden" type="radio" name="kitchen__style"
+                                        id="classic">
+                                    <label class="step__label" for="classic">
+                                        <span class="step__checkbox">
+                                            КЛАССИЧЕСКИЙ
+                                        </span>
+                                    </label>
+                                </li>
+                                <li class="step__item">
+                                    <img class="step__img" src="img/kitchen__style--modern.png" alt="">
+                                    <input class="step__input visually-hidden" type="radio" name="kitchen__style"
+                                        id="modern">
+                                    <label class="step__label" for="modern">
+                                        <span class="step__checkbox">
+                                            СОВРЕМЕННЫЙ
+                                        </span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc__step step step--5" id="step-5">
+                            <h3 class="step__heading">Введите <span class="colored__text">площадь кухни</span> и <span class="colored__text">планируемый бюджет</span></h3>
+                            <ul class="step__list">
+                                <li class="step__item--text">
+                                    <input class="page__input step__input--text step__input--square" type="number"
+                                        name="square" id="square" placeholder="Площадь кухни">
+                                </li>
+                                <li class="step__item--text">
+                                    <input class="page__input step__input--text step__input--rouble" type="number"
+                                        name="budget" id="budget" placeholder="Планируемый бюджет">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc__step step step--6" id="step-6">
+                            <h3 class="step__heading">У Вас уже есть <span class="colored__text">проект</span> кухни?
+                            </h3>
+                            <ul class="step__list step__list--project">
+                                <li class="step__item--project">
+                                    <input checked class="step__input visually-hidden" type="radio" name="project"
+                                        id="no_project">
+                                    <label class="step__label--project" for="no_project">
+                                        Нет, хочу индивидуальный проект
+                                    </label>
+                                </li>
+                                <li class="step__item--project">
+                                    <input class="step__input visually-hidden" type="radio" name="project"
+                                        id="have_project">
+                                    <label class="step__label--project" for="have_project">
+                                        Да, есть
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="calc__step step step--7" id="step-7">
+                            <h3 class="step__heading step__heading--text">Введите свои <span
+                                    class="colored__text">контактные данные</span></h3>
+                            <p class="step__text">Для обратной связи введите Ваше имя, номер телефона и email:</p>
+                            <ul class="step__list step__list--text">
+                                <li class="step__item--text">
+                                    <input class="page__input step__input--text" type="text" name="user_contacts"
+                                        id="user_name" placeholder="Ваше Имя">
+                                </li>
+                                <li class="step__item--text">
+                                    <input class="page__input step__input--text phone__mask" type="tel" name="user_contacts"
+                                        id="user_phone" placeholder="Телефон">
+                                </li>
+                                <li class="step__item--text">
+                                    <input class="page__input step__input--text" type="email" name="user_contacts"
+                                        id="user_email" placeholder="Email">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="step__nav">
+                            <a href="index.html" class="step__logo">
+                                <img src="img/logo.png" alt="" width="138" height="42">
+                            </a>
+                            <div class="step__buttons">
+                                <button class="button btn-reset step__button step__button--prev" type="button"
+                                    id="button__prev" onclick="nextPrev(-1)">НАЗАД</button>
+                                <button class="button btn-reset step__button step__button--next" type="button"
+                                    id="button__next" onclick="nextPrev(1)">ДАЛЕЕ</button>
+                            </div>
+                            <span class="step__number">1</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__catalog catalog" id="catalog">
+            <div class="container catalog__container">
+                <h2 class="catalog__heading page__heading">КУХНИ <span class="colored__text">НЕМАН</span> НА ЛЮБОЙ ВКУС
+                </h2>
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_1.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ МДФ-ПВХ</h4>
+                            <p class="desc__text">Классический стиль. Цвет Дуб белёный. Профиль №67</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_2.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ КРАШЕНОГО МДФ</h4>
+                            <p class="desc__text">Классический стиль. Цвет RAL 5010 глянец, патина золото. Профиль №83</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_3.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ КРАШЕНОГО МДФ</h4>
+                            <p class="desc__text">Классический стиль. Цвет RAL 9010 Глянец, патина, золото. Профиль №83</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_4.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ ЛАМИНИРОВАННОГО ДСП</h4>
+                            <p class="desc__text">Современный стиль. Цвет Хромикс серебрянный.</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_5.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ МДФ-ПВХ</h4>
+                            <p class="desc__text">Современный стиль. Цвет серый шёлк.</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_6.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ КРАШЕНОГО МДФ</h4>
+                            <p class="desc__text">Современный стиль. Цвет RAL 9003 Сигнальный белый. Профиль №99</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_7.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ МАССИВА ДУБА</h4>
+                            <p class="desc__text">Классический стиль. Цвет Дуб 17. Патина Золото. Профиль№715</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_8.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ МАССИВА ДУБА</h4>
+                            <p class="desc__text">Классический стиль. Цвет Дуб 18. Патина Золото. Профиль№726</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_9.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ КРАШЕНОГО МДФ</h4>
+                            <p class="desc__text">Классический стиль. Цвет RAL 9001 Матовый. Профиль№100</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_10.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ КРАШЕНОГО МДФ</h4>
+                            <p class="desc__text">Современный стиль. Цвет Краска 2.6.3. Профиль №95</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_11.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ АКРИЛА</h4>
+                            <p class="desc__text">Современный стиль. Цвет Мята глянец.</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <img class="catalog__img" src="img/catalog_12.jpg" alt="КУХНЯ ИЗ КРАШЕНОГО МДФ" width="370"
+                            height="280">
+                        <div class="catalog__desc">
+                            <h4 class="desc__heading">КУХНЯ ИЗ ПЛАСТИКА</h4>
+                            <p class="desc__text">Современный стиль. Цвет Белый глянец.</p>
+                            <button type="button" class="button desc__button btn-reset">ПОДРОБНЕЕ</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main__request request">
+            <div class="container request__container">
+                <h2 class="page__heading request__heading">ОСТАВЬТЕ ЗАЯВКУ НА <span
+                        class="colored__text">БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</span> ПРОФЕССИОНАЛЬНОГО ДИЗАЙНЕРА</h2>
+                <form class="request__form" action="">
+                    <input type="text" name="user_contacts" class="page__input request__input" placeholder="Ваше Имя">
+                    <input type="tel" name="user_contacts" class="page__input request__input phone__mask"
+                        placeholder="Телефон" id="">
+                    <button type="submit" class="button request__button btn-reset">ОСТАВИТЬ ЗАЯВКУ</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="main__cooperation cooperation">
+            <div class="container cooperation__container">
+                <h2 class="page__heading cooperation__heading">5 ПРОСТЫХ ШАГОВ СОТРУДНИЧЕСТВА</h2>
+                <ul class="cooperation__list">
+                    <li class="cooperation__item cooperation__item--phone">
+                        <h5 class="cooperation__text">ЗАЯВКА НА САЙТЕ ИЛИ ЗВОНОК</h5>
+                    </li>
+                    <li class="cooperation__item cooperation__item--measuring">
+                        <h5 class="cooperation__text">ВЫЕЗД ЗАМЕРЩИКА</h5>
+                    </li>
+                    <li class="cooperation__item cooperation__item--project">
+                        <h5 class="cooperation__text">СОСТАВЛЕНИЕ ДИЗАЙН-ПРОЕКТА</h5>
+                    </li>
+                    <li class="cooperation__item cooperation__item--delivery">
+                        <h5 class="cooperation__text">ДОСТАВКА И СБОРКА</h5>
+                    </li>
+                    <li class="cooperation__item cooperation__item--happiness">
+                        <h5 class="cooperation__text">ДОВОЛЬНЫЙ КЛИЕНТ</h5>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main__order order" id="order">
+            <div class="container">
+                <h2 class="page__heading order__heading">КАК <span class="colored__text">ЗАКАЗАТЬ?</span></h2>
+                <div class="order__container">
+                    <div class="order__card">
+                        <h3 class="card__heading">РАССЧИТАЕМ СТОИМОСТЬ ВАШЕЙ КУХНИ</h3>
+                        <p class="card__text">Для обратной связи введите Ваше имя, номер телефона и пожелание:</p>
+                        <form action="" class="card__form">
+                            <input type="text" name="user_contacts" id="" class="page__input card__input"
+                                placeholder="Ваше Имя">
+                            <input type="tel" name="user_contacts" id="" class="page__input card__input phone__mask"
+                                placeholder="Телефон">
+                            <textarea class="page__input card__input card__textarea" name="" id="" cols="30" rows="8"
+                                placeholder="Пожелание"></textarea>
+                            <button type="submit" class="button card__button btn-reset">УЗНАТЬ СТОИМОСТЬ</button>
+                        </form>
+                    </div>
+                    <ul class="order__list">
+                        <li class="order__item order__item--guarantee">
+                            <p class="order__text">ГАРАНТИЯ 24 МЕСЯЦА</p>
+                        </li>
+                        <li class="order__item order__item--quality">
+                            <p class="order__text">ФАБРИЧНЫЕ БЕЛОРУССКИЕ КУХНИ</p>
+                        </li>
+                        <li class="order__item order__item--people">
+                            <p class="order__text">ОПЫТНЫЕ ДИЗАЙНЕРЫ</p>
+                        </li>
+                        <li class="order__item order__item--money">
+                            <p class="order__text">ДОСТУПНЫЕ ЦЕНЫ</p>
+                        </li>
+                        <li class="order__item order__item--kitchen">
+                            <p class="order__text">ШОУРУМ В УДОБНОМ МЕСТЕ</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__contacts contacts" id="contacts">
+            <div class="container contacts__container">
+                <div class="contacts__left">
+                    <h2 class="page__heading contacts__heading">НАШИ <span class="colored__text">КОНТАКТЫ</span></h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <h4 class="contacts__head">АДРЕС</h4>
+                            <div class="contacts__info">
+                                <a class="contacts__text">Воронеж, Ленинский проспект, д. 156В</a>
+                            </div>
+                        </li>
+                        <li class="contacts__item">
+                            <h4 class="contacts__head">E-MAIL</h4>
+                            <div class="contacts__info">
+                                <a class="contacts__text" href="mailto:example@gmail.com">example@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contacts__item">
+                            <h4 class="contacts__head">ТЕЛЕФОНЫ</h4>
+                            <div class="contacts__info">
+                                <a class="contacts__text" href="tel:+74732517301">+7 (473) 251 73 01</a>
+                                <a class="contacts__text" href="tel:+79034200082">+7 (903) 420 00 82</a>
+                            </div>
+                        </li>
+                        <li class="contacts__item">
+                            <h4 class="contacts__head">ГРАФИК</h4>
+                            <div class="contacts__info">
+                                <a class="contacts__text">Пн-Вс с 10:00 до 20:00</a>
+                                <a class="contacts__text">Без перерыва и выходных</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__right">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af3f4e291d15cf9f98c9c261875607df518c3b660bcbeb6cb3cc4467b015be42e&amp;source=constructor" width="660" height="450" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page__footer footer">
+        <div class="footer__container container">
+            <a href="index.html" class="footer__logo">
+                <img src="img/logo.png" alt="Логотип Неман" width="251" height="76">
+            </a>
+            <ul class="footer__contacts">
+                <li class="footer__item">
+                    <a class="footer__link footer__link--adress">Воронеж, Ленинский проспект, д. 156В</a>
+                    <a class="footer__link footer__link--time">Пн-Вс с 10:00 до 20:00</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link footer__link--phone" href="tel:+74732517301">+7 (473) 251 73 01</a>
+                    <a class="footer__link footer__link--phone" href="tel:+79034200082">+7 (903) 420 00 82</a>
+                </li>
+            </ul>
+            <button class="btn-reset button footer__button" type="button"
+                onclick="show__modal(consultation)">БЕСПЛАТНАЯ<BR>
+                КОНСУЛЬТАЦИЯ
+            </button>
+        </div>
+    </footer>
+
+    <section class="modal photo" id="photo">
+        <div class="photo__container modal__container">
+            <button class="modal__close btn-reset" onclick="close__modal(photo)">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="27.3026" y="0.147949" width="3.838" height="38.38"
+                        transform="rotate(45.3469 27.3026 0.147949)" fill="#D9D9D9" />
+                    <rect x="29.8521" y="27.3027" width="3.838" height="38.38"
+                        transform="rotate(135.347 29.8521 27.3027)" fill="#D9D9D9" />
+                </svg>
+            </button>
+            <div class="photo__left">
+                <img class="photo__img" id="big__img" src="" alt="" width="680" height="550">
+            </div>
+            <div class="photo__right">
+                <h2 class="photo__heading">УЗНАТЬ СТОИМОСТЬ КУХНИ</h2>
+                <form action="" class="photo__form">
+                    <input class="page__input photo__input" type="text" name="user_contacts" placeholder="Ваше Имя">
+                    <input class="page__input photo__input phone__mask" type="tel" name="user_contacts" id=""
+                        placeholder="Телефон">
+                    <input class="page__input photo__input" type="email" name="user_contacts" id="" placeholder="Email">
+                    <textarea class="page__input photo__input" name="" id="" cols="30" rows="10"
+                        placeholder="Пожелание"></textarea>
+                    <button type="submit" class="btn-reset button photo__button">УЗНАТЬ СТОИМОСТЬ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal consultation" id="consultation">
+        <div class="consultation__container modal__container">
+            <button class="modal__close btn-reset" onclick="close__modal(consultation)">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="27.3026" y="0.147949" width="3.838" height="38.38"
+                        transform="rotate(45.3469 27.3026 0.147949)" fill="#D9D9D9" />
+                    <rect x="29.8521" y="27.3027" width="3.838" height="38.38"
+                        transform="rotate(135.347 29.8521 27.3027)" fill="#D9D9D9" />
+                </svg>
+            </button>
+            <h2 class="consultation__heading">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h2>
+            <p class="consultation__text">Для обратной связи введите Ваше имя, номер телефона:</p>
+            <form action="" class="consultation__form">
+                <input class="page__input consultation__input" type="text" name="user_contacts" placeholder="Ваше Имя">
+                <input class="page__input consultation__input phone__mask" type="tel" name="user_contacts" id=""
+                    placeholder="Телефон">
+                <button type="submit" class="btn-reset button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal call" id="call">
+        <div class="consultation__container modal__container">
+            <button class="modal__close btn-reset" onclick="close__modal(call)">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="27.3026" y="0.147949" width="3.838" height="38.38"
+                        transform="rotate(45.3469 27.3026 0.147949)" fill="#D9D9D9" />
+                    <rect x="29.8521" y="27.3027" width="3.838" height="38.38"
+                        transform="rotate(135.347 29.8521 27.3027)" fill="#D9D9D9" />
+                </svg>
+            </button>
+            <h2 class="consultation__heading">ЗАКАЗАТЬ ЗВОНОК</h2>
+            <p class="consultation__text">Для обратной связи введите Ваше имя, номер телефона:</p>
+            <form action="" class="consultation__form">
+                <input class="page__input consultation__input" type="text" name="user_contacts" placeholder="Ваше Имя">
+                <input class="page__input consultation__input phone__mask" type="tel" name="user_contacts" id=""
+                    placeholder="Телефон">
+                <button type="submit" class="btn-reset button">ЗАКАЗАТЬ ЗВОНОК</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="modal enroll" id="enroll">
+        <div class="enroll__container modal__container">
+            <button class="modal__close btn-reset" onclick="close__modal(enroll)">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="27.3026" y="0.147949" width="3.838" height="38.38"
+                        transform="rotate(45.3469 27.3026 0.147949)" fill="#D9D9D9" />
+                    <rect x="29.8521" y="27.3027" width="3.838" height="38.38"
+                        transform="rotate(135.347 29.8521 27.3027)" fill="#D9D9D9" />
+                </svg>
+            </button>
+            <h2 class="enroll__heading">ЗАПИСАТЬСЯ К ДИЗАЙНЕРУ</h2>
+            <p class="enroll__text">Введите Ваши контакты и предпочитаемую дату. Наш дизайнер свяжется с Вами в
+                ближайшее время!</p>
+            <form action="" class="enroll__form">
+                <input class="page__input enroll__input" type="text" name="user_contacts" placeholder="Ваше Имя">
+                <input class="page__input enroll__input phone__mask" type="tel" name="user_contacts" id=""
+                    placeholder="Телефон">
+                <input class="page__input enroll__input" type="datetime-local" id="meeting-time" name="meeting-time"
+                    value="">
+                <button type="submit" class="btn-reset button enroll__button">ЗАПИСАТЬСЯ</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal__overlay"></div>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+
+        let consultation = document.getElementById('consultation');
+
+        let call = document.getElementById('call');
+
+        let enroll = document.getElementById('enroll');
+
+        let photo = document.getElementById('photo');
+
+        let modal = document.getElementsByClassName('modal');
+
+        console.log(modal)
+
+        let overlay = document.querySelector('.modal__overlay');
+
+        function show__modal(modale) {
+            modale.classList.add('active');
+            overlay.classList.add('show__overlay');
+        }
+
+        function close__modal(modale) {
+            modale.classList.remove('active');
+            overlay.classList.remove('show__overlay');
+        }
+
+        overlay.addEventListener("click", function () {
+            for (let index = 0; index < modal.length; index++) {
+                const element = modal[index];
+                element.classList.remove("active");
+            }
+
+            // for (const iterator of modal) {
+            //     iterator.classList.remove("active")
+            // }
+
+            overlay.classList.remove('show__overlay');
+        })
+
+        let current__date = (new Date()).toISOString().slice(0, 16)
+
+        document.getElementById('meeting-time').min = current__date;
+        document.getElementById('meeting-time').value = current__date;
+
+        //phone mask
+        let phone = document.querySelectorAll(".phone__mask")
+        let maskOptions = {
+            mask: '+{7}(000)000-00-00',
+            lazy: false
+        }
+
+        for (let index = 0; index < phone.length; index++) {
+            const element = phone[index];
+            new IMask(phone[index], maskOptions);
+        }
+
+        //steps
+
+        let current__step = 0;
+
+        let button__prev = document.getElementById('button__prev');
+        let button__next = document.getElementById('button__next');
+        let steps = document.getElementsByClassName('step');
+
+        let calc__form = document.querySelector('.calc__form');
+        let step__number = document.querySelector('.step__number')
+
+        showTab(current__step);
+
+        function showTab(n) {
+
+            if (n < steps.length) {
+                steps[n].style.display = 'block';
+
+                step__number.innerHTML = n + 1;
+
+                if (n == 0) {
+                    button__prev.style.display = 'none';
+                } else {
+                    button__prev.style.display = 'inline-block';
+                }
+
+                if (n == steps.length - 1) {
+                    button__next.innerHTML = `ОТПРАВИТЬ<br>ЗАЯВКУ`;
+                    button__next.style.paddingTop = "12px";
+                } else {
+                    button__next.innerHTML = "ДАЛЕЕ";
+                }
+
+                stepIndicator(n);
+            }
+        }
+
+        function nextPrev(n) {
+
+            steps[current__step].style.display = 'none';
+
+            current__step = current__step + n;
+
+            if (current__step >= steps.length) {
+                calc__form.submit();
+                current__step = 0;
+            }
+
+            showTab(current__step);
+        }
+
+        function stepIndicator(n) {
+            for (let index = 0; index < steps.length; index++) {
+                const element = steps[index];
+                steps[index].classList.remove('active');
+            }
+            steps[n].classList.add('active');
+        }
+
+        //photo popup
+
+        let big__img = document.getElementById('big__img');
+
+        let btn = document.querySelectorAll(".desc__button");
+
+        console.log(btn)
+
+        btn.forEach(function(b) {
+            b.addEventListener('click', function() {
+                show__modal(photo);
+                let small__img = b.parentNode.parentNode.querySelector(".catalog__img");
+                big__img.src = small__img.src;
+            })
+        })
+    </script>
+
+
+
+</body>
+
+</html>
