@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="page">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Доставка</title>
+</head>
+<body class="page__body">
+    <header class="container header">
+        <div class="header_main">
+            <a href="index.html">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="header_main_right">
+                <li class="header_main_item">
+                    <a href="catalog.html" class="header__categories_button button">Каталог</a>
+                </li>
+                <li class="header_main_item">
+                    <button onclick="show__modal(signup)" class="btn-reset button" id="signup_button">Регистрация</button>
+                </li>
+                <li class="header_main_item">
+                    <button onclick="show__modal(signin)" class="btn-reset button" id="signin_button">Вход</button>
+                </li>
+                <li class="header_main_item">
+                    <a href="order.html">Заказы</a>
+                </li>
+                <li class="header_main_item">
+                    <a href="basket.html">Корзина</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="header_nav">
+            <ul class="header_nav_list">
+                <li class="header_nav_item">
+                    <a href="sale.html">Акции</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="delivery.html">Доставка</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="return.html">Возврат</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="about.html">О нас</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="review.html">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="page_main">
+        <section class="delivery_info">
+            <div class="container">
+                <h1 class="head_1 info_head">Доставка</h1>
+                <p class="info_text">Доставка осуществляется курьерами поставщика или службой курьеров Достависта. Также товар можно забрать самостоятельно от поставщика.</p>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <div class="container">
+                <ul class="delivery_list">
+                    <li class="delivery_item">
+                        <img src="img/delivery_1.svg" alt="">
+                        <p class="delivery_text">Добавьте нужные товары в корзину и оплатите заказ</p>
+                    </li>
+                    <li class="delivery_item">
+                        <img src="img/delivery_2.svg" alt="">
+                        <p class="delivery_text">Получите уведомления о подтверждении вашего заказа</p>
+                    </li>
+                    <li class="delivery_item">
+                        <img src="img/delivery_3.svg" alt="">
+                        <p class="delivery_text">После подтверждения мы сформируем ваш заказ</p>
+                    </li>
+                    <li class="delivery_item">
+                        <img src="img/delivery_4.svg" alt="">
+                        <p class="delivery_text">Заберите из пунктов выдачи</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_top">
+                <ul class="footer_list">
+                    <li class="footer_item">
+                        <a href="index.html">
+                            <img src="img/logo_footer.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link" href="">info@stroykastore.ru</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link"  href="">Москва, ул. Пушкина 10</a>
+                    </li>
+                </ul>
+                <ul class="footer_list">
+                    <li class="footer_item">
+                        <a class="footer_link"  href="">Заказы</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link"  href="basket.html">Корзина</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link"  href="about.html">О нас</a>
+                    </li>
+                </ul>
+                <ul class="footer_list">
+                    <li class="footer_item">
+                        <a class="footer_link"  href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link"  href="sale.html">Акции</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link"  href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="footer_list">
+                    <li class="footer_item">
+                        <a class="footer_link"  href="delivery.html">Доставка</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link"  href="return.html">Возврат</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link"  href="docs.html">Документация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+                <p>© ЦветнойМир</p>
+                <p>Cделала Чиркова Е. С.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal_overlay"></div>
+
+    <section class="modal signin" id="signin">
+        <div class="modal_container">
+            <button onclick="close__modal()" class="btn-reset modal_close"><svg id="Capa_1" enable-background="new 0 0 413.348 413.348" viewBox="0 0 413.348 413.348" xmlns="http://www.w3.org/2000/svg"><path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path></svg></button>
+            <h2 class="head_2 signin_head">Вход</h2>
+            <form class="signin_form">
+                <div class="signin_info">
+                    <label class="signin_label" for="email">E-mail</label>
+                    <input class="page_input" type="email" name="email" placeholder="youmail@mail.com" id="email"
+                        required>
+                </div>
+                <div class="signin_info">
+                    <label class="signin_label" for="password">Пароль</label>
+                    <input class="page_input" type="password" name="password" placeholder="********" id="password"
+                        required>
+                </div>
+                <input class="button" type="submit" value="Войти">
+            </form>
+        </div>
+    </section>
+
+    <section class="modal signup" id="signup">
+        <div class="modal_container">
+            <button onclick="close__modal()" class="btn-reset modal_close"><svg id="Capa_1" enable-background="new 0 0 413.348 413.348" viewBox="0 0 413.348 413.348" xmlns="http://www.w3.org/2000/svg"><path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path></svg></button>
+            <h2 class="head_2 signup_head">Регистрация</h2>
+            <form class="signup_form">
+                <div class="signup_block">
+                    <div class="signup_info">
+                        <label class="signup_label" for="name_signup">Имя</label>
+                        <input class="page_input" type="text" name="name" id="name_signup" placeholder="Ваше имя"
+                            required>
+                    </div>
+                    <div class="signup_info">
+                        <label class="signup_label" for="email_signup">E-mail</label>
+                        <input class="page_input" type="email" name="email" id="email_signup"
+                            placeholder="youmail@mail.com" required>
+                    </div>
+                    <div class="signup_info">
+                        <label class="signup_label" for="password_new">Новый пароль</label>
+                        <input class="page_input" type="password" name="password" id="password_new"
+                            placeholder="********" required>
+                    </div>
+                    <div class="signup_info">
+                        <label class="signup_label" for="password_confirm">Подтверждаение пароля</label>
+                        <input class="page_input" type="password" name="password" id="password_confirm"
+                            placeholder="********" required>
+                    </div>
+                </div>
+                <input class="button" type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <title>Интернет-магазин продажи лакокрасочных материалов "Цветной мир"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Отзывы</title>
 </head>
 
 <body class="page__body">
@@ -16,7 +16,7 @@
             </a>
             <ul class="header_main_right">
                 <li class="header_main_item">
-                    <a href="catalog.html" class="button">Каталог</a>
+                    <a href="catalog.html" class="header__categories_button button">Каталог</a>
                 </li>
                 <li class="header_main_item">
                     <button onclick="show__modal(signup)" class="btn-reset button" id="signup_button">Регистрация</button>
@@ -57,156 +57,11 @@
     </header>
 
     <main class="page_main">
-        <section class="info">
-            <div class="container">
-                <h1 class="head_1 info_head">Интернет-магазин лакокрасочных материалов</h1>
-                <p class="info_text">Наши цифровые полки полны лакокрасочной продукцией ведущих производителей,
-                    предназначенной как для профессионалов, так и для любителей.</p>
-            </div>
-        </section>
 
-        <section class="sale container">
-            <div class="sale_top">
-                <h2 class="head_2">Акции</h2>
-                <a href="sale.html" class="seeall">Все акции</a>
-            </div>
-            <ul class="sale_bottom">
-                <li class="sale_card">
-                    <a class="sale_link" href="product_1.html">
-                        <img src="img/product_1.jpg" alt="" width="278px">
-                    </a>
-                    <div class="sale_card_info">
-                        <p class="sale_card_text">Краска для потолков Dulux матовая ослепительно белая 9 л</p>
-                        <div class="prices">
-                            <p class="price">4 847₽</p>
-                            <p class="price_old">5 449 ₽</p>
-                        </div>
-                        <a href="" class="button">В корзину</a>
-                    </div>
-                </li>
-                <li class="sale_card">
-                    <a class="sale_link" href="product_2.html">
-                        <img src="img/product_2.jpg" alt="" width="278px">
-                    </a>
-                    <div class="sale_card_info">
-                        <p class="sale_card_text">Краска для стен и потолков Marshall Maestro цвет белый 9 л</p>
-                        <div class="prices">
-                            <p class="price">1 414₽</p>
-                            <p class="price_old">2 449 ₽</p>
-                        </div>
-                        <a href="" class="button">В корзину</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section class="categories container">
-            <div class="categories_top">
-                <h2 class="head_2">Категории</h2>
-                <a href="catalog.html" class="seeall">Все категории</a>
-            </div>
-            <div class="categories_bottom">
-                <ul class="categories_list">
-                    <li class="categories_item categories_item_1">
-                        <a class="categories_link" href="paints.html">Краски</a>
-                    </li>
-                    <li class="categories_item categories_item_2">
-                        <a class="categories_link" href="varnish.html">Лаки</a>
-                    </li>
-                    <li class="categories_item categories_item_3">
-                        <a class="categories_link" href="primers.html">Грунтовки</a>
-                    </li>
-                    <li class="categories_item categories_item_4">
-                        <a class="categories_link" href="">Растворители</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="popular container">
-            <div class="popular_top">
-                <h2 class="head_2">Популярные товары</h2>
-            </div>
-            <div class="popular_bottom">
-                <ul class="popular_list">
-                    <li class="popular_item">
-                        <a href="">
-                            <img src="img/popular_1.jpg" alt="">
-                        </a>
-                        <div class="popular_info">
-                            <p class="popular_text">Лак для мебели Luxens акриловый бесцветный полуглянцевый 0.9 л</p>
-                            <p class="price">1 275 ₽</p>
-                            <a href="" class="button popular_button">В корзину</a>
-                        </div>
-                    </li>
-                    <li class="popular_item">
-                        <a href="">
-                            <img src="img/popular_2.jpg" alt="">
-                        </a>
-                        <div class="popular_info">
-                            <p class="popular_text">Грунтовка глубокого проникновения Bergauf TiefGrunt 10 л</p>
-                            <p class="price">839 ₽</p>
-                            <a href="" class="button popular_button">В корзину</a>
-                        </div>
-                    </li>
-                    <li class="popular_item">
-                        <a href="product_3.html">
-                            <img src="img/popular_3.jpg" alt="">
-                        </a>
-                        <div class="popular_info">
-                            <p class="popular_text">Краска Profilux ВД для спальни, 11кг</p>
-                            <p class="price">970 ₽</p>
-                            <a href="" class="button popular_button">В корзину</a>
-                        </div>
-                    </li>
-                    <li class="popular_item">
-                        <a href="">
-                            <img src="img/popular_4.jpg" alt="">
-                        </a>
-                        <div class="popular_info">
-                            <p class="popular_text">Шпаклёвка готовая финишная Danogips SuperFinish 18.1 кг
-                            </p>
-                            <p class="price">2 555 ₽</p>
-                            <a href="" class="button popular_button">В корзину</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="brand container">
-            <div class="brand_top">
-                <h2 class="head_2">Популярные бренды</h2>
-            </div>
-            <div class="brand_bottom">
-                <ul class="brand_list">
-                    <li class="brand_item">
-                        <img src="img/brand_1.jpg" alt="">
-                    </li>
-                    <li class="brand_item">
-                        <img src="img/brand_2.jpg" alt="">
-                    </li>
-                    <li class="brand_item">
-                        <img src="img/brand_3.jpg" alt="">
-                    </li>
-                    <li class="brand_item">
-                        <img src="img/brand_4.jpg" alt="">
-                    </li>
-                    <li class="brand_item">
-                        <img src="img/brand_5.jpg" alt="">
-                    </li>
-                    <li class="brand_item">
-                        <img src="img/brand_6.jpg" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="review">
+        <section class="review reviews">
             <div class="container">
                 <div class="review_top">
                     <h2 class="head_2">Отзывы</h2>
-                    <a href="review.html" class="seeall">Все отзывы</a>
                 </div>
                 <ul class="review_list">
                     <li class="review_item">
@@ -218,7 +73,7 @@
                     </li>
                     <li class="review_item">
                         <p class="review_head">Анна</p>
-                        <p class="review_text">Очень удовлетворен покупкой в "Цветном мире". Внешний вид моей кухни
+                        <p class="review_text">Очень удовлетворена покупкой в "Цветном мире". Внешний вид моей кухни
                             теперь безупречен благодаря вашей краске. Продавцы профессионально проконсультировали,
                             спасибо за сервис!</p>
                         <p class="review_date">18 марта 2022 г.</p>
@@ -230,30 +85,25 @@
                             идеальный результат.</p>
                         <p class="review_date">6 ноября 2021 г.</p>
                     </li>
+                    <li class="review_item">
+                        <p class="review_head">Виктория</p>
+                        <p class="review_text">Покупала в "Цветном мире" фасадную краску. Изумительное качество, цвет не выгорел на солнце, экономичный расход. Магазин заслуживает пятерки за товары и обслуживание.</p>
+                        <p class="review_date">20 мая 2021 г.</p>
+                    </li>
+                    <li class="review_item">
+                        <p class="review_head">Иван</p>
+                        <p class="review_text">Долго не мог решиться на цвет для прихожей, но "Цветной мир" мне в этом помог. Краска легла ровно, высохла быстро, и никаких разводов. Отличный товар!</p>
+                        <p class="review_date">10 ноября 2020 г.</p>
+                    </li>
+                    <li class="review_item">
+                        <p class="review_head">Елена</p>
+                        <p class="review_text">Была приятно удивлена качеством обслуживания в "Цветном мире". Менеджер помог подобрать идеальную краску для гостиной. Результат превзошел все ожидания – стены сияют!</p>
+                        <p class="review_date">6 января 2021 г.</p>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <section class="about">
-            <div class="container about_container">
-                <h2 class="head_2 about_head">О компании</h2>
-                <p class="about_text">Добро пожаловать в "Цветной мир" – вашего надежного партнера в мире ремонтных
-                    работ и
-                    творчества! Наш интернет-магазин предлагает широкий ассортимент высококачественных лакокрасочных
-                    материалов для дома и профессионального использования. Мы гордимся тем, что с 2008 года помогаем
-                    нашим
-                    клиентам преображать и оживлять пространство вокруг себя.</p>
-                <p class="about_text">Мы бережно относимся к выбору производителей и предлагаем только проверенные
-                    изделия,
-                    которые обеспечивают превосходный результат. В нашем каталоге вы найдете всё необходимое для
-                    покраски
-                    внутренних и внешних поверхностей: акриловые, водоэмульсионные, латексные, алкидные, масляные краски
-                    и
-                    многое другое. Также мы обеспечиваем полный спектр сопутствующих товаров, включая грунтовки,
-                    шпаклевки,
-                    растворители.</p>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
